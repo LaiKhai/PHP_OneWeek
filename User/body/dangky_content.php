@@ -64,7 +64,7 @@
                         </div>
                         <div class="form-group" style="padding-bottom:1vw;">
                             <label for="" style="padding-bottom:1vw;">Số điện thoại</label>
-                            <input class="form-control" type="text" name="sdt" placeholder="Số điện thoại...">
+                            <input class="form-control"  type="text" name="sdt" placeholder="Số điện thoại...">
                             <div class="err" style="color:red;">
                                 <span><?php if(isset($err['sdt']))
                                 {

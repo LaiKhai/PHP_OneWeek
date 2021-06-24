@@ -42,7 +42,7 @@
         require_once($level.head_path."head_index.php");
         require_once($level.head_path."header.php");
         require_once($level.body_path."map_lienhe.php");
-        require_once($level.body_path."contact_lienhe.php");
+        // require_once($level.body_path."contact_lienhe.php");
     }
     if($isThongTin==true)
     {
