@@ -3,10 +3,9 @@
     <div class="container my-4">
         <div class="row text-center py-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1">Our Brands</h1>
+                <h1 class="h1">Các Nhãn Hàng Được Bán Tại <b class="text-success"> OneWeek</b></h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    Lorem ipsum dolor sit amet.
+                    OneWeek đầu tư các dòng điện thoại ở hầu hết các nhãn hàng nổi tiếng hiện nay.
                 </p>
             </div>
             <div class="col-lg-9 m-auto tempaltemo-carousel">
@@ -31,22 +30,22 @@
                                     <div class="row">
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_01.png";?>"
+                                                    src="<?php echo $level.img_path."vivo_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_02.png";?>"
+                                                    src="<?php echo $level.img_path."iphone_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_03.png";?>"
+                                                    src="<?php echo $level.img_path."samsung_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_04.png";?>"
+                                                    src="<?php echo $level.img_path."oppo_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                     </div>
@@ -54,26 +53,26 @@
                                 <!--End First slide-->
 
                                 <!--Second slide-->
-                                <div class="carousel-item">
+                                <div class="carousel-item ">
                                     <div class="row">
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_01.png";?>"
+                                                    src="<?php echo $level.img_path."vivo_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_02.png";?>"
+                                                    src="<?php echo $level.img_path."iphone_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_03.png";?>"
+                                                    src="<?php echo $level.img_path."samsung_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_04.png";?>"
+                                                    src="<?php echo $level.img_path."oppo_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                     </div>
@@ -81,26 +80,26 @@
                                 <!--End Second slide-->
 
                                 <!--Third slide-->
-                                <div class="carousel-item">
+                                <div class="carousel-item ">
                                     <div class="row">
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_01.png";?>"
+                                                    src="<?php echo $level.img_path."vivo_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_02.png";?>"
+                                                    src="<?php echo $level.img_path."iphone_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_03.png";?>"
+                                                    src="<?php echo $level.img_path."samsung_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                         <div class="col-3 p-md-5">
                                             <a href="#"><img class="img-fluid brand-img"
-                                                    src="<?php echo $level.img_path."brand_04.png";?>"
+                                                    src="<?php echo $level.img_path."oppo_brand.png";?>"
                                                     alt="Brand Logo"></a>
                                         </div>
                                     </div>

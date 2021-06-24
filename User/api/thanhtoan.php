@@ -3,6 +3,7 @@
     $action=(isset($_GET['action']))?$_GET['action']:[];
     $user=(isset($_SESSION['user']))?$user=$_SESSION['user']:[];
     $id=$user[0]['cliID'];
+
     
     
     if($action=='insert')

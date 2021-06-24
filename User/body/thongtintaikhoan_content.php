@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>Đăng Ký</h2>
+                            <h2>THÔNG TIN TÀI KHOẢN</h2>
                         </div>
                     </div>
                 </div>

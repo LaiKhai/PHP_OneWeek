@@ -51,8 +51,8 @@
                         <div class="form-group">
                             <input type="text" class="form-control" name="search" id="" aria-describedby="helpId"
                                 placeholder="" style="width: 69%;">
-                            <button type="submit" class="btn btn-primary"
-                                style="bottom: 40px;left: 71%;">Submit</button>
+                            <button type="submit" class="btn btn-success" style="bottom: 40px;left: 71%;">Tìm
+                                Kiếm</button>
                         </div>
                     </form>
                 </div>

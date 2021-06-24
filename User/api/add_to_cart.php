@@ -16,7 +16,8 @@
         
         $action = (isset($_GET['action']))?$_GET['action']:'add';
         $soluong= (isset($_GET['soluong']))?$_GET['soluong']:1;
-        
+        $query_kiemtra=DP::run_query("SELECT prodSL AS 'soluong' FROM product WHERE prodID=?",[$id],2);
+
         if($action=='add')
         {
             if(isset($_SESSION['cart'][$id]))
@@ -27,17 +28,27 @@
                 }
                 else
                 {
-                //them mot sach moi vao gio hang
-                    $_SESSION['cart'][$id]
-                    =array(
-                        'id'=>$prodID,
-                        'name'=>$prodName,
-                        'img'=>$prodImg,
-                        'dongia'=>$prodPrice,
-                        'donvi'=>$prodInit,
-                        'mota'=>$prodDes,
-                        'soluong'=>$soluong
-                    );
+                     if($query_kiemtra[0]['soluong']>='1')
+                     {
+                        //them mot sach moi vao gio hang
+                         $_SESSION['cart'][$id]
+                         =array(
+                         'id'=>$prodID,
+                         'name'=>$prodName,
+                         'img'=>$prodImg,
+                         'dongia'=>$prodPrice,
+                         'donvi'=>$prodInit,
+                         'mota'=>$prodDes,
+                         'soluong'=>$soluong
+                     ); 
+                     }
+                     else
+                     {
+                         echo "<script>";
+                         echo "alert('Sản phẩm đã hết hàng !');";
+                         
+                         echo "</script>";
+                     }
                 }
         }
         if($action=='update')
@@ -48,27 +59,6 @@
         {
             unset($_SESSION['cart'][$id]);
         }
-        if($action == 'insert')
-        {
-            // foreach($_SESSION['cart'] as $item)
-            // {
-            //     echo "Thành Công";
-            //     $masp=$_SESSION['cart']['id'];
-            //     $name=$_SESSION['cart']['name'];
-            //     $hinh=$_SESSION['cart']['img'];
-            //     $dongia=$_SESSION['cart']['dongia'];
-            //     $donvi=$_SESSION['cart']['donvi'];
-            //     $soluong=$_SESSION['cart']['soluong'];
-            //     $mota=$_SESSION['cart']['mota'];
-            // }
-            
-            //$query="INSERT INTO `cart`(`cartID`, `cartName`, `cartImg`, `cartPrice`, `cartInit`, `cartQuantity`, `cartStatus`)
-            //VALUES ('$masp','$name','$hinh','$dongia','$donvi','$soluong','1')";
-            //$add=DP::run_query($query,[$masp,$name,$dongia,$soluong,$donvi,$mota],2);
-            
-        }
     }
-    else{
-        $err;
-    }
+    
 ?>

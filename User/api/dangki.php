@@ -43,6 +43,10 @@
             {
                 $err['nhaplaimatkhau']='Mật Khẩu không trùng khớp !';
             }
+            if(strlen($sdt)>10)
+            {
+                $err['sdt']='Số điện thoại không phù hợp (chỉ có thể dưới 10 số)';
+            }
             if(empty($err))
             {
                 $query_dangnhap=DP::run_query("SELECT COUNT(*) FROM `client` WHERE cliUser=?",[$taikhoan],2);

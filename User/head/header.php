@@ -11,11 +11,10 @@
                 <a class="navbar-sm-brand text-light text-decoration-none"
                     href="mailto:OneWeek@company.vn">OneWeek@company.vn</a>
                 <i class="fa fa-phone mx-2"></i>
+                <a class="navbar-sm-brand text-light text-decoration-none" href="tel:070-375-xxxx">070375XXXX</a>
+                <i class="fas fa-user-lock mx-2"></i>
                 <a class="navbar-sm-brand text-light text-decoration-none"
-                 href="tel:070-375-xxxx">070375XXXX</a>
-                 <i class="fas fa-user-lock mx-2"></i>
-                 <a class="navbar-sm-brand text-light text-decoration-none"
-                 href="<?php echo $level."admin/";?>">Admin</a>
+                    href="<?php echo $level."admin/";?>">Admin</a>
             </div>
             <div>
                 <a class="text-light" href="https://www.facebook.com/laihong.khai.5" target="_blank" rel="sponsored"><i
@@ -72,7 +71,16 @@
                         </div>
                     </div>
                 </div>
-                <a class="nav-icon position-relative text-decoration-none" href="#">
+                <a class="nav-icon position-relative text-decoration-none" href="<?php 
+                                            if(isset($_SESSION['user']))
+                                            {
+                                                echo $level."pages/cart.php";
+                                            }
+                                            else
+                                            {
+                                                echo $level.pages_path."DangNhap.php";
+                                            }
+                                            ?>">
                     <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                 </a>
                 <?php if(isset($user[0]['cliUser'])){?>

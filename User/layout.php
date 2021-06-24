@@ -8,6 +8,7 @@
         require_once($level.head_path."head_index.php");
         require_once($level.head_path."header.php");
         require_once($level.body_path."slideshow_index.php");
+        require_once($level.comp_path."sanpham_index.php");
         require_once($level.body_path."sanphamkhac_index.php");
         require_once($level.body_path."sansale_index.php");
     }
@@ -38,14 +39,14 @@
     }
     if($isLienHe==true)
     {
-        require_once($level.head_path."head_cart.php");
+        require_once($level.head_path."head_index.php");
         require_once($level.head_path."header.php");
         require_once($level.body_path."map_lienhe.php");
         require_once($level.body_path."contact_lienhe.php");
     }
     if($isThongTin==true)
     {
-        require_once($level.head_path."head_cart.php");
+        require_once($level.head_path."head_index.php");
         require_once($level.head_path."header.php");
         require_once($level.body_path."banner_thongtin.php");
         require_once($level.body_path."section_thongtin.php");
