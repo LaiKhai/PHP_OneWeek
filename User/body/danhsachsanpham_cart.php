@@ -1,5 +1,5 @@
 <!--================Cart Area =================-->
-<?php   
+<?php  
     $total=0; 
     $cart=(isset($_SESSION['cart']))?$_SESSION['cart']:[];
 ?>
@@ -52,8 +52,9 @@
                                 </td>
                                 <td>
 
-                                    <input type="number" name="soluong" id="" value="<?php echo $item['soluong'];?>"
-                                        style="width:4vw;">
+                                    <input type="number" name="soluong" id=""
+                                        oninput="this.value = Math.abs(this.value)"
+                                        value="<?php echo $item['soluong'];?>" style="width:4vw;">
                                 </td>
                                 <td>
                                     <h5 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
@@ -67,7 +68,9 @@
                                 <td>
                                     <input type="hidden" name="action" value="update">
                                     <input type="hidden" name="id" value="<?php echo $item['id'];?>">
-                                    <button type="submit" class="btn btn-success font-weight-normal">Cập nhật</button>
+                                    <button type="submit" class="btn btn-success font-weight-normal">
+                                        Cập nhật
+                                    </button>
                                 </td>
                             </form>
                         </tr>

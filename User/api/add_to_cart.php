@@ -16,7 +16,8 @@
         
         $action = (isset($_GET['action']))?$_GET['action']:'add';
         $soluong= (isset($_GET['soluong']))?$_GET['soluong']:1;
-        $query_kiemtra=DP::run_query("SELECT prodSL AS 'soluong' FROM product WHERE prodID=?",[$id],2);
+        
+        $query_kiemtra=DP::run_query("SELECT prodSL AS 'sl' FROM product WHERE prodID=?",[$id],2);
 
         if($action=='add')
         {
@@ -28,7 +29,7 @@
                 }
                 else
                 {
-                     if($query_kiemtra[0]['soluong']>='1')
+                     if($query_kiemtra[0]['sl']>='1')
                      {
                         //them mot sach moi vao gio hang
                          $_SESSION['cart'][$id]
@@ -46,14 +47,24 @@
                      {
                          echo "<script>";
                          echo "alert('Sản phẩm đã hết hàng !');";
-                         
                          echo "</script>";
                      }
                 }
         }
         if($action=='update')
         {
-            $_SESSION['cart'][$id]['soluong']=$soluong;
+                if($_SESSION['cart'][$id]['soluong']<=$query_kiemtra['sl'])
+                {
+                $_SESSION['cart'][$id]['soluong']=$soluong; 
+                }
+                else
+                {
+                    echo "<script>";
+                    echo "alert('Số lượng vượt quá số lượng sản phẩm có trong kho !');";
+                    echo "window.location='../pages/cart.php'";
+                    echo "</script>";
+                }
+            
         }
         if($action=='delete')
         {

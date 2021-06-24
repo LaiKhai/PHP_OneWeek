@@ -42,7 +42,8 @@
                                         <h6>Số Lượng:</h6>
                                     </li>
                                     <li class="list-inline-item">
-                                        <input type="number" name="soluong" value="1" style="width:4vw;">
+                                        <input type="number" name="soluong" value="1"
+                                            oninput="this.value = Math.abs(this.value)" style="width:4vw;">
                                     </li>
                                 </ul>
                                 <input type="hidden" name="product-title" value="Activewear">
@@ -71,7 +72,9 @@
                                         <input type="hidden" name="id" value="<?php echo $key['prodID'];?>">
                                         <button type="submit" class="btn btn-success btn-lg" name="">MUA
                                             NGAY</button>
-                                        <?php }else{
+                                        <?php
+                                            }
+                                            else{
                                                 echo "<script>";
                                                 echo "window.location='../pages/Dangnhap.php'";
                                                 echo "</script>";
